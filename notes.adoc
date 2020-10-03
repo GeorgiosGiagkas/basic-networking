@@ -1,0 +1,173 @@
+= Network Fundamentals
+Network Direction <https://www.youtube.com/channel/UCtuXekfqj-paqsxtqVNCC2A>
+1.0, Oct 3, 2020, Asciidoctor 1.5 article template
+:toc:
+:icons: font
+:quick-uri: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
+
+Content entered directly below the header but before the first section heading is called the preamble.
+
+== Introduction to networking.footnote:[Introduction to networking:<https://www.youtube.com/watch?v=cNwEVYkx2Kk&list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8&ab_channel=NetworkDirection&t=1s>]
+
+=== What is a network?
+
+The goal of the network is to move information from one device to another. The sender and the reciever must _speak the same language_. That means that they have to agree how to communicate. This is called a *protocol*, a set of instructions on how to handle the information. 
+
+.Protocol examples:
+* TCP and ETHERNET are protocols for sending and recieving data.
+* HTTP used for accessing the web
+* SMTP used for email
+
+.Quiz 1
+====
+What are the two ways computers can connect to the network?
+----
+Wireless and wired
+----
+====
+
+.Quiz 2
+====
+What devices do they usually connect to?
+----
+Switch
+----
+====
+
+.Quiz 3
+====
+How many protocols are used when one computer accesses another computer?
+----
+Several or many protocols
+----
+====
+
+=== Network Types
+
+Networks connect devices also known as nodes. Nodes can control the traffic of the network like switches or routers. Nodes can include end points or hosts, these are devices that send and recieve the bulk of the traffic (example servers, prints etc.).
+
+==== SOHO network 
+
+Small Office, Home Office.
+
+WARNING: People often say hub but they mean switch when talking about a SOHO network. Hub is an old technology.
+
+TIP: In a SOHO the router, switch and internet access point is integrated into one device.
+
+==== LAN
+
+Local Area Network with one or more switches and access points (SOHO vs Enterprise)
+
+==== WAN
+
+Wide area network connects networks that are foar apart
+
+
+.Quiz 4
+====
+Your company has three divisions. Each group has a network, and all the networks are joined together. Is this still a LAN? Or is it something else?
+----
+LAN
+----
+====
+
+.Quiz 5
+====
+The company adds a retail division. There is a head office and six branch offices. What type of network is this?
+----
+Each of the branch offices would also be called a LAN. ut, all of these networks are separated, so the whole network would be called a WAN
+----
+====
+
+
+Detailed Answers in: 
+<https://networkdirection.net/labsandquizzes/quizzes/introduction-to-networking-quiz/>
+
+
+
+
+
+
+
+
+This is a paragraph with a *bold* word and an _italicized_ word.
+
+.Image caption
+image::image-file-name.png[I am the image alt text.]
+
+This is another paragraph.footnote:[I am footnote text and will be displayed at the bottom of the article.]
+
+
+=== Second level heading
+
+.Unordered list title
+* list item 1
+** nested list item
+*** nested nested list item 1
+*** nested nested list item 2
+* list item 2
+
+This is a paragraph.
+
+.Example block title
+====
+Content in an example block is subject to normal substitutions.
+====
+
+.Sidebar title
+****
+Sidebars contain aside text and are subject to normal substitutions.
+****
+
+==== Third level heading
+
+[#id-for-listing-block]
+.Listing block title
+----
+Content in a listing block is subject to verbatim substitutions.
+Listing block content is commonly used to preserve code input.
+----
+
+===== Fourth level heading
+
+.Table title
+|===
+|Column heading 1 |Column heading 2
+
+|Column 1, row 1
+|Column 2, row 1
+
+|Column 1, row 2
+|Column 2, row 2
+|===
+
+====== Fifth level heading
+
+[quote, firstname lastname, movie title]
+____
+I am a block quote or a prose excerpt.
+I am subject to normal substitutions.
+____
+
+[verse, firstname lastname, poem title and more]
+____
+I am a verse block.
+  Indents and endlines are preserved in verse blocks.
+____
+
+== First level heading
+
+TIP: There are five admonition labels: Tip, Note, Important, Caution and Warning.
+
+// I am a comment and won't be rendered.
+
+. ordered list item
+.. nested ordered list item
+. ordered list item
+
+The text at the end of this sentence is cross referenced to <<_third_level_heading,the third level heading>>
+
+== First level heading
+
+This is a link to the https://asciidoctor.org/docs/user-manual/[Asciidoctor User Manual].
+This is an attribute reference {quick-uri}[which links this text to the Asciidoctor Quick Reference Guide].

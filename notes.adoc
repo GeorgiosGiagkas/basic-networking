@@ -85,6 +85,51 @@ Detailed Answers in:
 
 
 
+== Cabling Devices.footnote:[Cabling Devices :<https://www.youtube.com/watch?v=Ud8UeNgdaz4&list=PLDQaRcbiSnqF5U8ffMgZzS7fq1rHUI3Q8&index=2&ab_channel=NetworkDirection&t=1s>]
+
+
+
+
+=== Cabling and WIFI
+
+Fiber vs Coper
+
+=== Ethernet protocol
+
+The ethernet protocol describes physical links and how data is formatted.
+
+Two layers(physical vs media Control Access)
+
+802 = LAN technologies
+
+.Ethernet physical standards:
+* 802.3 = Ethernet
+* 802.3i = 10 Mbps
+* 802.3u = 100 Mbps
+* 802.3ab = 1 Gbps
+* 802.3an = 10 Gbps
+
+TIP: Alternatively, 802.3an = 10GMBASE-T. 10G is for 10 Gagabits per seconds(speed). BASE is for baseband (cable), T for UTP (type of cable) or LX(optic cabe)
+
+Electrical cables use electrical signals (compare to analog signal). PAttern of 01. 
+
+UTP stands for Unshielded Twisted Pair and uses pairs of wires, twisted together. Some are for sending, others are for receiving.
+
+Straight through UTP connects a host to a switch, and crossover UTP connects hosts to each other. However, modern ones support MDI-X whitch detects the cable type and adapts if needed.
+
+
+Full duplex devices send and recieve at the same time. Half duplex takes turns sending and receiving.
+
+=== Network addressing
+
+In a LAN each device has two addresses. An IP address and a MAC address.
+
+Each host has at least one *MAC address*, or more accurate, each network card has a *MAC address*. This address is permanent!
+
+MAC address is used to for devices to communicate in the same LAN segment.
+
+IP is chosen by us, the networking admins. Allows access hosts to a different LAN segment.
+
 
 
 
